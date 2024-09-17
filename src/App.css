@@ -1,0 +1,370 @@
+*{
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* margin:40px 40px; */
+}
+#try-but{
+  border-radius: 50px;
+  width: 140px;
+  height: 40px;
+  background-color:white;
+  box-shadow: 3px 3px 5px;
+  border: none;
+}
+#try-but:hover{
+  background-color:rgb(241, 241, 241);
+}
+#back-img{
+  width: 100%;
+  height: 100vh;
+  padding: 50px 60px;
+  background-image: url('D:\\figma\\figma-clone\\src\\images\\header-img\\HERO BG.png');
+}
+#header-content{
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+#left-text{
+  width: 40%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items:flex-start;
+  /* padding: 0px 60px 0px 0px; */
+}
+#left-text p{
+  font-size:20px;
+}
+#right-img{
+  width: 55%;
+  height: 460px;
+}
+#content-but{
+  border-radius: 40px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(251, 19, 255);
+  color: white;
+}
+#content-but:hover{
+  background-color: rgb(248, 93, 251);
+}
+
+#big-img{
+  width: 85%;
+  height: 90%;
+  background-image: url('D:\\figma\\figma-clone\\src\\images\\header-img\\imge1Head.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+#small-img{
+  position: relative;
+  bottom: 59%;
+  left: 62%;
+  width: 30%;
+  height: 70%;
+  background-image: url('D:\\figma\\figma-clone\\src\\images\\header-img\\imge2Head.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  #header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  #try-but{
+    border-radius: 50px;
+    width: 90px;
+    height: 25px;
+    background-color:white;
+    box-shadow: 3px 3px 5px;
+    border: none;
+  }
+  #header img{
+    width: 110px;
+    height: 20px;
+  }
+  #back-img{
+    width: 100%;
+    height: 85vh;
+    padding: 20px 30px;
+    background-image: url('D:\\figma\\figma-clone\\src\\images\\header-img\\HERO BG.png');
+  }
+  #header-content{
+    margin-top: 40px;
+    width: 100%;
+    height: 680px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #left-text{
+    width: 100%;
+    height: 40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+  }
+  #left-text h1{
+    text-align: center;
+  }
+  #left-text p{
+    text-align: center;
+    font-size: 19.5px;
+  }
+  #right-img{
+    width: 100%;
+    height: 38vh;
+  }
+  #big-img{
+    width: 95%;
+    height: 90%;
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+  #small-img{
+    position: relative;
+    bottom: 65%;
+    left: 70%;
+    width: 30%;
+    height: 70%;
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+}
+
+/* main content */
+#main-container{
+  width: 100%;
+  padding: 80px 100px;
+}
+#innerContent1{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  box-shadow: 1px 1px 2px;
+  border-radius: 10px;
+}
+#innerContent1:hover{
+  border: 2px solid rgb(18, 61, 255);
+  border-radius: 10px;
+}
+#innerContent2:hover{
+  border: 2px solid rgb(18, 61, 255);
+  border-radius: 10px;
+}
+#innerContent2{
+  width: 100%;
+  box-shadow: 1px 1px 2px;
+  height: 400px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  border-radius: 10px;
+}
+#text-content{
+  width: 40%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:flex-start;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+#img-conent{
+  width: 40%;
+  height: 300px;
+  text-align: right;
+}
+#img-conent img{
+  height: 300px;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px){
+  #main-container{
+    width: 100%;
+    padding: 40px 30px;
+  }
+  #innerContent1{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction:column-reverse;
+    box-shadow: 1px 1px 3px;
+  }
+  #innerContent2{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction:column-reverse;
+    box-shadow: 1px 1px 3px;
+  }
+  #text-content{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+  }
+  #text-content h1{
+    text-align: center;
+  }
+  #text-content p{
+    text-align: center;
+  }
+  #img-conent{
+    width: 80%;
+    height: 250px;
+    text-align:center;
+  }
+  #img-conent img{
+    width: 100%;
+    height: 250px;
+  }
+}
+/* Footer start */
+
+#footer-container{
+  width: 100%;
+  height: 300px;
+  background-color: #00252E ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#inner-footer{
+  width: 90%;
+  height: 250px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+}
+#one,#two,#three{
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:flex-start;
+  flex-direction: column;
+}
+#four{
+  height: 150px;
+  display: flex;
+  justify-content:space-around;
+  align-items:flex-start;
+  flex-direction: column;
+}
+#social-media{
+  width: 150px;
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-start;
+}
+#one div img{
+    padding: 0px 10px 0px 0px;
+    float: left;
+}
+#footer-container a{
+   color: white;
+   text-decoration: none;
+}
+#footer-container a:hover{
+  text-decoration:underline;
+}
+/* footer end */
+#notify{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+#card{
+  background-color: white;
+  width: 650px;
+  height: 200px;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+  border-radius: 20px;
+  box-shadow: -1px -1px 5px 2px gray ;
+  border: none;
+}
+#card-but{
+  width: 360px;
+  height: 55px;
+  border-radius: 50px;
+  background-color:rgb(252, 46, 255) ;
+  color: white;
+}
+#card-but:hover{
+  background-color: rgb(248, 93, 251);
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  #card{
+    text-align: center;
+    width: 90%;
+  }
+  #card h1{
+    font-size:larger;
+  }
+  #card-but{
+    width: 60%;
+    height: 40px;
+  }
+  #footer-container{
+    height:650px ;
+    align-items:flex-end;
+  }
+  #inner-footer{
+    width: 90%;
+    height: 550px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #four{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+  }
+  #sii{
+    font-size: 10px;
+  }
+  #two,#three{
+    height: 100px;
+  }
+  #one{
+    height: 250px;
+  }
+}
